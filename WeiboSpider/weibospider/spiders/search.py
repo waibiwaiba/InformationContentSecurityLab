@@ -72,7 +72,7 @@ class SearchSpider(Spider):
         # 是否按照热度排序,默认按照时间排序
         is_sort_by_hot = True
         for keyword in keywords:
-            print(keyword)
+            print(keyword)  
             url = f"https://s.weibo.com/weibo?q={keyword}"
             if is_sort_by_hot:
                 url += "&xsort=hot"
